@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>LOURAENA's CLASSMATES</title>
+  
+
+  <style>
+    .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow-x: auto; 
+    width: 100%;
+    }
+    table {
+        width: 100%;
+        max-width: 800px; 
+        border-spacing: 5px; 
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        color: white;
+    }
+    th {
+        background-color: #0041b0;
+    }
+
+    tr:hover{
+        background-color: #71c6f7;
+    }
+    .icon{
+      display: flex;
+    }
+    i{
+      color: white;
+      justify-content: center;
+      padding: 1.1rem;
+    }
+    
+
+    @media (max-width: 768px) { 
+        th, td { padding: 10px; font-size: 14px; }
+        .container { overflow-x: auto; }
+    }
+
+    @media (max-width: 480px) { 
+        .container { width: 100%; overflow-x: auto; }
+        table { width: 100%; font-size: 12px; display: block; overflow-x: auto; }
+        th, td { padding: 8px; font-size: 12px; white-space: nowrap; }
+    }
+
+    @media (max-width: 320px) { 
+        table { font-size: 10px; }
+        th, td { padding: 5px; font-size: 10px; }
+    }
+ </style>
+</head>
+<body>
+  <header>
+    <div class="logo">LOURAENA</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="instructor.html">Instructor</a></li>
+        <li><a href="classmate.html" class="active">Classmate</a></li>
+      </ul>
+    </nav>
+    <div class="burger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+  
+
+  <div class="container">
+    <table>
+        <tr>
+          <th> </th>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>COURSE</th>
+            <th>GENDER</th>
+            <th>HOME ADDRESS</th>
+            <th> </th>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+            <td>LEONEL JAY</td>
+            <td>TOCMO</td>
+            <td>BSIT</td>
+            <td>MALE</td>
+            <td>GINGOOG CITY</td>
+            <td class="icon">
+              <a href="#"><i class="fa-solid fa-trash"></i></a>
+              <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+              <td>JHON WYN</td>
+              <td>VERIAL</td>
+              <td>BSIT</td>
+              <td>MALE</td>
+              <td>GINGOOG CITY</td>
+              <td class="icon">
+                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+              </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+              <td>FRIETH LEE</td>
+              <td>ROMERO</td>
+              <td>BSIT</td>
+              <td>MALE</td>
+              <td>GINGOOG CITY</td>
+              <td class="icon">
+                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+              </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+              <td>LORENZ GLIER</td>
+              <td>ALICER</td>
+              <td>BSIT</td>
+              <td>MALE</td>
+              <td>GINGOOG CITY</td>
+              <td class="icon">
+                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+              </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+              <td>JOHN ALFIE</td>
+              <td>ENOPIA</td>
+              <td>BSIT</td>
+              <td>MALE</td>
+              <td>GINGOOG CITY</td>
+              <td class="icon">
+                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+              </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+              <td>ANACITO</td>
+              <td>IBAOC</td>
+              <td>BSIT</td>
+              <td>MALE</td>
+              <td>GINGOOG CITY</td>
+              <td class="icon">
+                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+              </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+              <td>KAISER</td>
+              <td>LAGUMBAY</td>
+              <td>BSIT</td>
+              <td>MALE</td>
+              <td>GINGOOG CITY</td>
+              <td class="icon">
+                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+              </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+              <td>BRIAN REL</td>
+              <td>ROSAL</td>
+              <td>BSIT</td>
+              <td>MALE</td>
+              <td>GINGOOG CITY</td>
+              <td class="icon">
+                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+              </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+              <td>ANGEL</td>
+              <td>NERI</td>
+              <td>BSIT</td>
+              <td>FEMALE</td>
+              <td>GINGOOG CITY</td>
+              <td class="icon">
+                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+              </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+              <td>SHAKINAH</td>
+              <td>LLANTO</td>
+              <td>BSIT</td>
+              <td>FEMALE</td>
+              <td>GINGOOG CITY</td>
+              <td class="icon">
+                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+              </td>
+        </tr>
+        
+    </table>
+</div>
+  
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      document.querySelector('.burger').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
